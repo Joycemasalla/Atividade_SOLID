@@ -74,35 +74,12 @@ class ServicoUsuario {
     }
 }
 
-// Classe principal para testar
-public class DIPCorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO CORRETO - APLICANDO DIP ===\n");
-        
-        // Usando MySQL
-        System.out.println("--- Teste com MySQL ---");
-        BancoDados mysql = new MySQLBancoDados();
-        ServicoUsuario servico1 = new ServicoUsuario(mysql);
-        servico1.registrarUsuario("João Silva", "joao@email.com");
-        
-        System.out.println("\n--- Teste com PostgreSQL ---");
-        // Trocando para PostgreSQL SEM modificar ServicoUsuario!
-        BancoDados postgres = new PostgreSQLBancoDados();
-        ServicoUsuario servico2 = new ServicoUsuario(postgres);
-        servico2.registrarUsuario("Maria Santos", "maria@email.com");
-        
-        System.out.println("\n--- Teste com Banco em Memória (Mock) ---");
-        // Usando mock para testes
-        BancoDados memoria = new BancoDadosMemoria();
-        ServicoUsuario servico3 = new ServicoUsuario(memoria);
-        servico3.registrarUsuario("Pedro Costa", "pedro@email.com");
-        
-        System.out.println("\n=== MELHORIAS OBTIDAS ===");
-        System.out.println("1. ServicoUsuario depende de abstração");
-        System.out.println("2. Baixo acoplamento entre classes");
-        System.out.println("3. Fácil trocar implementação");
-        System.out.println("4. Fácil de testar (pode usar mocks)");
-        System.out.println("5. Aplica corretamente o princípio DIP");
-        System.out.println("6. Sistema flexível e extensível");
-    }
-}
+
+        // == MELHORIAS OBTIDAS ===
+        // ServicoUsuario depende de abstração
+        // Baixo acoplamento entre classes
+        // Fácil trocar implementação
+        // Fácil de testar (pode usar mocks)
+        // Aplica corretamente o princípio DIP
+        // Sistema flexível e extensível
+  

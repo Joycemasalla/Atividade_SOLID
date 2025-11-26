@@ -119,38 +119,11 @@ class Motorista implements Trabalhador {
     }
 }
 
-// Classe principal para testar
-public class ISPIncorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO INCORRETO - VIOLANDO ISP ===\n");
+
         
-        Trabalhador dev = new Desenvolvedor("Carlos");
-        dev.trabalhar();
-        dev.programar();
-        
-        try {
-            dev.dirigir();
-        } catch (UnsupportedOperationException e) {
-            System.out.println("ERRO: " + e.getMessage());
-        }
-        
-        System.out.println();
-        
-        Trabalhador atendente = new Atendente("Ana");
-        atendente.trabalhar();
-        atendente.atenderCliente();
-        
-        try {
-            atendente.programar();
-        } catch (UnsupportedOperationException e) {
-            System.out.println("ERRO: " + e.getMessage());
-        }
-        
-        System.out.println("\n=== PROBLEMAS DESTA ABORDAGEM ===");
-        System.out.println("1. Interface 'gorda' com métodos não relacionados");
-        System.out.println("2. Classes forçadas a implementar métodos desnecessários");
-        System.out.println("3. Implementações que lançam exceções");
-        System.out.println("4. Alto acoplamento e baixa coesão");
-        System.out.println("5. Viola o princípio ISP");
-    }
-}
+        // == PROBLEMAS DESTA ABORDAGEM ===
+        // Interface 'gorda' com métodos não relacionados
+        // Classes forçadas a implementar métodos desnecessários
+        // Implementações que lançam exceções
+        // Alto acoplamento e baixa coesão
+        // Viola o princípio ISP

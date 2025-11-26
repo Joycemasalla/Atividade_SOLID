@@ -58,32 +58,12 @@ class SimuladorPatinhos {
     }
 }
 
-// Classe principal para testar
-public class LSPIncorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO INCORRETO - VIOLANDO LSP ===\n");
+
         
-        SimuladorPatinhos simulador = new SimuladorPatinhos();
-        
-        Pato pato1 = new PatoSelvagem("Donald");
-        simulador.simular(pato1);
-        
-        Pato pato2 = new PatoDomestico("Daisy");
-        simulador.simular(pato2);
-        
-        System.out.println("\nAgora com PatoDeBorracha:");
-        try {
-            Pato pato3 = new PatoDeBorracha("Patinho Amarelo");
-            simulador.simular(pato3); // Vai lançar exceção!
-        } catch (UnsupportedOperationException e) {
-            System.out.println("ERRO: " + e.getMessage());
-        }
-        
-        System.out.println("\n=== PROBLEMAS DESTA ABORDAGEM ===");
-        System.out.println("1. PatoDeBorracha não pode substituir Pato");
-        System.out.println("2. Viola o contrato da classe base");
-        System.out.println("3. Lança exceção em método herdado");
-        System.out.println("4. Quebra o polimorfismo");
-        System.out.println("5. Viola o princípio de Liskov");
-    }
-}
+    //    === PROBLEMAS DESTA ABORDAGEM ===
+    //     PatoDeBorracha não pode substituir Pato
+    //     Viola o contrato da classe base
+    //     Lança exceção em método herdado
+    //     Quebra o polimorfismo
+    //     Viola o princípio de Liskov
+    

@@ -54,19 +54,11 @@ class Usuario {
     }
 }
 
-// Classe principal para testar
-public class SRPIncorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO INCORRETO - VIOLANDO SRP ===\n");
         
-        Usuario usuario = new Usuario("João Silva", "joao@email.com", "senha123");
-        usuario.registrar();
-        
-        System.out.println("\n=== PROBLEMAS DESTA ABORDAGEM ===");
-        System.out.println("1. A classe Usuario tem 4 responsabilidades diferentes");
-        System.out.println("2. Mudanças no envio de email afetam a classe Usuario");
-        System.out.println("3. Mudanças no banco de dados afetam a classe Usuario");
-        System.out.println("4. Difícil de testar cada funcionalidade isoladamente");
-        System.out.println("5. Alto acoplamento e baixa coesão");
-    }
-}
+        // == PROBLEMAS DESTA ABORDAGEM ===
+        // A classe Usuario tem 4 responsabilidades diferentes
+        // Mudanças no envio de email afetam a classe Usuario
+        // Mudanças no banco de dados afetam a classe Usuario
+        // Difícil de testar cada funcionalidade isoladamente
+        // Alto acoplamento e baixa coesão
+    

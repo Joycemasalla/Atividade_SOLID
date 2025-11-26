@@ -82,40 +82,12 @@ class SimuladorPatinhos {
     }
 }
 
-// Classe principal para testar
-public class LSPCorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO CORRETO - APLICANDO LSP ===\n");
+
         
-        SimuladorPatinhos simulador = new SimuladorPatinhos();
-        
-        Pato pato1 = new PatoSelvagem("Donald");
-        simulador.simularComportamentoBasico(pato1);
-        
-        Pato pato2 = new PatoDomestico("Daisy");
-        simulador.simularComportamentoBasico(pato2);
-        
-        Pato pato3 = new PatoDeBorracha("Patinho Amarelo");
-        simulador.simularComportamentoBasico(pato3);
-        
-        System.out.println("\n--- Testando capacidade de voo ---");
-        
-        if (pato1 instanceof PatoVoador) {
-            simulador.simularVoo((PatoVoador) pato1);
-        }
-        
-        if (pato3 instanceof PatoVoador) {
-            simulador.simularVoo((PatoVoador) pato3);
-        } else {
-            System.out.println("\n" + pato3.getNome() + 
-                " não pode voar (não implementa PatoVoador)");
-        }
-        
-        System.out.println("\n=== MELHORIAS OBTIDAS ===");
-        System.out.println("1. Hierarquia de classes bem projetada");
-        System.out.println("2. Subtipos podem substituir tipos base sem problemas");
-        System.out.println("3. Não há lançamento de exceções inesperadas");
-        System.out.println("4. Polimorfismo funciona corretamente");
-        System.out.println("5. Aplica corretamente o princípio de Liskov");
-    }
-}
+        // == MELHORIAS OBTIDAS ===
+        // Hierarquia de classes bem projetada
+        // Subtipos podem substituir tipos base sem problemas
+        // Não há lançamento de exceções inesperadas
+        // Polimorfismo funciona corretamente
+        // Aplica corretamente o princípio de Liskov
+  

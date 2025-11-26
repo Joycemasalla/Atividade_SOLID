@@ -79,21 +79,12 @@ class ServicoRegistroUsuario {
     }
 }
 
-// Classe principal para testar
-public class SRPCorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO CORRETO - APLICANDO SRP ===\n");
         
-        Usuario usuario = new Usuario("Maria Santos", "maria@email.com", "senha456");
-        ServicoRegistroUsuario servico = new ServicoRegistroUsuario();
-        servico.registrar(usuario);
-        
-        System.out.println("\n=== MELHORIAS OBTIDAS ===");
-        System.out.println("1. Cada classe tem uma única responsabilidade");
-        System.out.println("2. Mudanças no envio de email afetam apenas ServicoEmail");
-        System.out.println("3. Mudanças no banco afetam apenas RepositorioUsuario");
-        System.out.println("4. Fácil de testar cada funcionalidade isoladamente");
-        System.out.println("5. Alto nível de coesão e baixo acoplamento");
-        System.out.println("6. Fácil de manter e estender");
-    }
-}
+        // == MELHORIAS OBTIDAS ===
+        // Cada classe tem uma única responsabilidade
+        // Mudanças no envio de email afetam apenas ServicoEmail
+        // Mudanças no banco afetam apenas RepositorioUsuario
+        // Fácil de testar cada funcionalidade isoladamente
+        // Alto nível de coesão e baixo acoplamento
+        // Fácil de manter e estender
+  

@@ -51,20 +51,12 @@ class PostgreSQLBancoDados {
     }
 }
 
-// Classe principal para testar
-public class DIPIncorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO INCORRETO - VIOLANDO DIP ===\n");
-        
-        ServicoUsuario servico = new ServicoUsuario();
-        servico.registrarUsuario("João Silva", "joao@email.com");
-        
-        System.out.println("\n=== PROBLEMAS DESTA ABORDAGEM ===");
-        System.out.println("1. ServicoUsuario depende diretamente de MySQLBancoDados");
-        System.out.println("2. Alto acoplamento entre classes");
-        System.out.println("3. Para trocar o BD, precisa modificar ServicoUsuario");
-        System.out.println("4. Difícil de testar (não pode usar mock)");
-        System.out.println("5. Viola o princípio DIP");
-        System.out.println("6. Sistema rígido e pouco flexível");
-    }
-}
+
+        // == PROBLEMAS DESTA ABORDAGEM ===
+        // ServicoUsuario depende diretamente de MySQLBancoDados
+        // Alto acoplamento entre classes
+        // Para trocar o BD, precisa modificar ServicoUsuario
+        // Difícil de testar (não pode usar mock)
+        // Viola o princípio DIP
+        // Sistema rígido e pouco flexível
+ 

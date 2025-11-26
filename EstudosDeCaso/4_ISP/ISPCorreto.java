@@ -122,41 +122,13 @@ class GerenteAtendimento implements Trabalhador, AtendimentoCliente, Motorizado 
     }
 }
 
-// Classe principal para testar
-public class ISPCorreto {
-    public static void main(String[] args) {
-        System.out.println("=== EXEMPLO CORRETO - APLICANDO ISP ===\n");
+
         
-        System.out.println("--- Desenvolvedor ---");
-        Desenvolvedor dev = new Desenvolvedor("Carlos");
-        dev.trabalhar();
-        dev.comer();
-        dev.programar();
-        
-        System.out.println("\n--- Atendente ---");
-        Atendente atendente = new Atendente("Ana");
-        atendente.trabalhar();
-        atendente.comer();
-        atendente.atenderCliente();
-        
-        System.out.println("\n--- Motorista ---");
-        Motorista motorista = new Motorista("José");
-        motorista.trabalhar();
-        motorista.comer();
-        motorista.dirigir();
-        
-        System.out.println("\n--- Gerente Multifuncional ---");
-        GerenteAtendimento gerente = new GerenteAtendimento("Paula");
-        gerente.trabalhar();
-        gerente.atenderCliente();
-        gerente.dirigir();
-        
-        System.out.println("\n=== MELHORIAS OBTIDAS ===");
-        System.out.println("1. Interfaces pequenas e específicas");
-        System.out.println("2. Classes implementam apenas o necessário");
-        System.out.println("3. Sem exceções ou implementações vazias");
-        System.out.println("4. Baixo acoplamento e alta coesão");
-        System.out.println("5. Flexibilidade para combinar interfaces");
-        System.out.println("6. Aplica corretamente o princípio ISP");
-    }
-}
+        // == MELHORIAS OBTIDAS ===
+        // Interfaces pequenas e específicas
+        // Classes implementam apenas o necessário
+        // Sem exceções ou implementações vazias
+        // Baixo acoplamento e alta coesão
+        // Flexibilidade para combinar interfaces
+        // Aplica corretamente o princípio ISP
+  
